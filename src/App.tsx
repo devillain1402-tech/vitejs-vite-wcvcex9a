@@ -54,7 +54,7 @@ function App() {
         ) {
           setMessage('Please verify your email before signing in.');
         } else {
-          setMessage('Login failed. Please try again.');
+          setMessage(error.message);
         }
       }
     } catch {
